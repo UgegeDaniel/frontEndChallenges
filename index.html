@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Mentor.io | Qr code componenet Challenge </title>
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"); 
+    
+        *,*::before,*::after{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body{
+            font-family: "Poppins" , Sans-Serif;
+            background-color: #D7E5F0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5%;
+            background-color: white;
+            border-radius: 20px;
+            width: 80%;
+            min-height: 60%;
+        }
+        .card__image{
+            height: 55%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .text{
+            height: 45%;
+            margin: 20px auto;
+        }
+        .text__dark{
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin: 1rem;
+        }
+        .text__light{
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+            color: gray;
+        }
+        @media(min-width: 768px){
+            html{
+                font-size: 50%;
+            }
+            .card{
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card__image">
+           <img src="./img/imgQr.png" alt=""> 
+        </div>
+        <div class="text">
+            <div class="text__dark">
+                Improve your front-end skills by building projects 
+            </div>
+            <div class="text__light">
+                Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+            </div>
+        </div>
+    </div>
+</body>
+</html>
